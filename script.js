@@ -41,30 +41,3 @@ function addItem() {
 
 addButton$$.addEventListener('click', addItem);
 
-/* 
-function addItem() {
-    if (input$$.value == '' || input$$.value == undefined){
-        alert("¡Tienes que escribir algo!");
-    } else {
-        const createdLi$$ = document.createElement('li');
-        createdLi$$.innerText= input$$.value;
-        ul$$.appendChild(createdLi$$);
-        liCount++;
-        
-        const deleteButton$$ = document.createElement('button');
-        deleteButton$$.innerText = "X";
-        deleteButton$$.addEventListener('click', () => {
-            createdLi$$.remove();
-            liCount--;
-            if (liCount == 0) {
-                divEmpty$$.style.visibility = "visible";
-            }
-        });
-        createdLi$$.appendChild(deleteButton$$);
-        input$$.value = "";
-    };
-    if (liCount > 0) {
-        divEmpty$$.style.visibility = "hidden";
-    };
-    
-}; */
